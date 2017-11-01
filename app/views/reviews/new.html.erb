@@ -1,0 +1,14 @@
+<h1 class="text-center">
+  Add a review man!
+</h1>
+
+<%= simple_form_for([@restaurant, @review]) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :content %>
+    <%= f.input :rating %>
+  </div>
+  <div class="form-submit">
+    <%= f.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
